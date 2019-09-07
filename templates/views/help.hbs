@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Help</title>
+        <link rel="icon" href="/img/icon.jpg">
+        <!--Since i used=> app.use(express.static(publicDirectory)) in src/app.js and provided
+        the public directory path, all the src or href is in the public directory, in other words
+        the starting point is public folder  -->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>{{helpText}}</p>
+        </div>
+        
+        {{>footer}}
+    </body>
+</html>
